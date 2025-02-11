@@ -25,7 +25,7 @@ public class FPS_Controller : NetworkBehaviour
     private float verticalRotation;
     private Vector3 currentMovement = Vector3.zero;
     private CharacterController characterController;
-    [SerializeField] private Camera playerCamera; // I somehow need to disable the other player cameras
+    private Camera playerCamera;
     private bool canUncrouch;
     private bool isGrounded;
     private Vector3 velocity;
@@ -47,6 +47,12 @@ public class FPS_Controller : NetworkBehaviour
         if (IsOwner)
         {
             playerCamera = GetComponentInChildren<Camera>();
+            playerCamera.enabled = true;
+        }
+        else
+        {
+            playerCamera = GetComponentInChildren<Camera>();
+            playerCamera.enabled = false;
         }
     }
 
