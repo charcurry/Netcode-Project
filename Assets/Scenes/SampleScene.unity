@@ -345,6 +345,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &256571048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+  m_PrefabInstance: {fileID: 624764581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &398746682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,6 +1146,7 @@ MonoBehaviour:
   canvas: {fileID: 0}
   networkManager: {fileID: 1500472945}
   ballPrefab: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+  currentBall: {fileID: 256571048}
   score1:
     m_InternalValue: 0
   score2:

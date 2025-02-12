@@ -14,7 +14,7 @@ public class GoalManager : NetworkBehaviour
 
     public GameObject ballPrefab;
 
-    private GameObject currentBall;
+    [SerializeField] private GameObject currentBall;
 
     private Vector3 ballSpawnPosition;
 
