@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class GoalNet : MonoBehaviour
+public class GoalNet : NetworkBehaviour
 {
     public GoalManager goalManager;
 
@@ -17,7 +18,10 @@ public class GoalNet : MonoBehaviour
     {
         if (other.CompareTag("Ball"))
         {
-            goalManager.GoalScored(player1);
+            if (IsServer)
+            {
+                goalManager.GoalScoredServerRpc(player1);
+            }
         }
     }
 }
