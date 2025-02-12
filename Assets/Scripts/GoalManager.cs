@@ -8,8 +8,6 @@ public class GoalManager : NetworkBehaviour
 {
     public TextMeshProUGUI scoreText;
 
-    public Canvas canvas;
-
     public NetworkManager networkManager;
 
     public GameObject ballPrefab;
@@ -28,15 +26,6 @@ public class GoalManager : NetworkBehaviour
         {
             score1.Value = 0;
             score2.Value = 0;
-        }
-
-        if (IsOwner)
-        {
-            canvas.enabled = true;
-        }
-        else
-        {
-            canvas.enabled = false;
         }
 
         currentBall = GameObject.FindGameObjectWithTag("Ball");

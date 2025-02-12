@@ -114,10 +114,10 @@ public class FPS_Controller : NetworkBehaviour
         currentMovement.x = horizontalMovement.x * speed;
         currentMovement.z = horizontalMovement.z * speed;
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-        }
+        //if (Input.GetButtonDown("Jump") && isGrounded)
+        //{
+        //    velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
+        //}
 
         if (velocity.y < 0f && isGrounded)
         {
