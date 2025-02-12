@@ -19,7 +19,7 @@ public class FPS_Controller : NetworkBehaviour
 
     [Header("Jump Settings")]
     [SerializeField] private float distance = 1.0f;
-    [SerializeField] private float jumpForce = 10f;
+    //[SerializeField] private float jumpForce = 10f;
     [SerializeField] private float gravity = -9.81f;
 
     private float verticalRotation;
